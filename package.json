@@ -137,7 +137,7 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "peerDependencies": {
-    "react": "^0.14.0-rc"
+    "react": "^0.14.0"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.3.1",
@@ -165,7 +165,7 @@
     "postcss": "^4.0.0",
     "postcss-svg": "fabiosantoscode/postcss-svg#feature/fix-dot-template",
     "pre-commit": "^1.0.10",
-    "react": "^0.14.0-rc",
+    "react": "^0.14.0",
     "svg-sprite": "^1.2.5",
     "svg4everybody": "^2.0.0",
     "svgo": "^0.5.3",
