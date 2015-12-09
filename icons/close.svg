@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>close</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="close" sketch:type="MSArtboardGroup">
-            <path d="M31,10.8745882 L30.1254118,10 L20.5,19.6254118 L10.8745882,10 L10,10.8745882 L19.6254118,20.5 L10,30.1254118 L10.8745882,31 L20.5,21.3745882 L30.1254118,31 L31,30.1254118 L21.3745882,20.5 L31,10.8745882 Z" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024"
+	 enable-background="new 0 0 1024 1024" xml:space="preserve">
+<title>Close</title>
+<desc>Created with Sketch.</desc>
+<path id="Shape" d="M807.7,280.5l-60.2-60.2L509,458.8L270.5,220.3l-60.2,60.2L448.8,519L210.3,757.5l60.2,60.2L509,579.2
+	l238.5,238.5l60.2-60.2L569.2,519L807.7,280.5z"/>
 </svg>
