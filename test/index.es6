@@ -1,6 +1,7 @@
 import Icon from '..';
-import React from 'react/addons';
-const TestUtils = React.addons.TestUtils;
+import React from 'react';
+import TestUtils from 'react-addons-test-utils';
+
 /* eslint react/no-danger: 0, id-match: 0 */
 describe('Icon', () => {
   it('is compatible with React.Component', () => {

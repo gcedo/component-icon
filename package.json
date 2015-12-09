@@ -136,9 +136,6 @@
     "test:watch": "npm run test:base -- -wR min",
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
-  "peerDependencies": {
-    "react": "^0.14.0-rc"
-  },
   "devDependencies": {
     "@economist/component-devpack": "^3.3.1",
     "babel": "^5.8.23",
@@ -155,9 +152,11 @@
     "eslint-plugin-filenames": "^0.1.2",
     "eslint-plugin-one-variable-per-var": "^0.0.3",
     "eslint-plugin-react": "^3.3.1",
+    "karma": "^0.13.11",
     "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.1",
     "karma-mocha": "^0.2.0",
-    "karma-sauce-launcher": "^0.2.14",
+    "karma-sauce-launcher": "^0.3.0",
     "minifyify": "^7.0.1",
     "mocha": "^2.2.5",
     "npm-watch": "0.0.1",
@@ -165,11 +164,15 @@
     "postcss": "^4.0.0",
     "postcss-svg": "fabiosantoscode/postcss-svg#feature/fix-dot-template",
     "pre-commit": "^1.0.10",
-    "react": "^0.14.0-rc",
+    "react": "^0.14.0",
+    "react-addons-test-utils": "^0.14.0",
     "svg-sprite": "^1.2.5",
     "svg4everybody": "^2.0.0",
     "svgo": "^0.5.3",
     "watchify": "^3.4.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0"
   },
   "assets": [
     "assets/icons.svg"
