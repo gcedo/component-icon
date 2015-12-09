@@ -10,6 +10,7 @@ export default class Icon extends React.Component {
       size: React.PropTypes.string,
       className: React.PropTypes.string,
       uri: React.PropTypes.string,
+      rounded: React.PropTypes.bool,
     };
   }
 
@@ -18,6 +19,7 @@ export default class Icon extends React.Component {
       className: '',
       uri: '/assets/icons.svg',
       size: '60px',
+      rounded: false,
     };
   }
 
@@ -60,6 +62,9 @@ export default class Icon extends React.Component {
         'whatsapp',
         'worldif',
         'youtube',
+        'film',
+        'headset',
+        'video',
       ],
     };
   }
@@ -100,9 +105,27 @@ export default class Icon extends React.Component {
     if (this.props.className) {
       props.className += ` ${this.props.className}`;
     }
-    if (this.props.background) {
-      props.style = { background: this.props.background };
+    let html = '';
+    if (this.props.rounded) {
+      const roundedProps = {
+        style: {
+          height: props.height,
+          width: props.width,
+        },
+      };
+      if (this.props.background) {
+        roundedProps.style.background = this.props.background;
+      }
+      html = (
+        <div className={`Icon--rounded ${props.className}`} {...roundedProps}>
+          <svg {...props}/>
+        </div>);
+    } else {
+      if (this.props.background) {
+        props.style = { background: this.props.background };
+      }
+      html = (<svg {...props}/>);
     }
-    return (<svg {...props}/>);
+    return html;
   }
 }

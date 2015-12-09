@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>magnifier</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="magnifier" sketch:type="MSArtboardGroup">
-            <path d="M31.2887454,28.5745778 L25.8397475,23.9392489 C25.2752333,23.432185 24.6724468,23.1977876 24.1892609,23.2217057 C25.4761621,21.714865 26.2511732,19.7631476 26.2511732,17.6248689 C26.2511732,12.8603823 22.3904697,9 17.6255866,9 C12.8607035,9 9,12.8603823 9,17.6248689 C9,22.3893556 12.8607035,26.2497379 17.6255866,26.2497379 C19.7592591,26.2497379 21.715923,25.4747913 23.222889,24.1879972 C23.1989689,24.6759265 23.4333859,25.2786628 23.9404919,25.8383465 L28.5762065,31.286891 C29.3703537,32.1670772 30.6668229,32.2436152 31.4561861,31.4543177 C32.2407652,30.6650202 32.1690049,29.3686589 31.2887454,28.5745778 L31.2887454,28.5745778 L31.2887454,28.5745778 Z M17.6255866,23.3795652 C14.4489979,23.3795652 11.8751955,20.805977 11.8751955,17.6296526 C11.8751955,14.4533281 14.4489979,11.8797399 17.6255866,11.8797399 C20.8021753,11.8797399 23.3759776,14.4533281 23.3759776,17.6296526 C23.3759776,20.805977 20.8021753,23.3795652 17.6255866,23.3795652 L17.6255866,23.3795652 L17.6255866,23.3795652 Z" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024"
+	 enable-background="new 0 0 1024 1024" xml:space="preserve">
+<title>Search</title>
+<desc>Created with Sketch.</desc>
+<path id="Shape" d="M661.3,597.3h-33.7l-11.9-11.5c41.8-48.6,67-111.8,67-180.5c0-153.2-124.2-277.3-277.3-277.3
+	S128,252.2,128,405.3s124.2,277.3,277.3,277.3c68.7,0,131.8-25.2,180.5-67l11.5,11.9v33.7l213.3,212.9l63.6-63.6L661.3,597.3
+	L661.3,597.3z M405.3,597.3c-106.2,0-192-85.8-192-192s85.8-192,192-192s192,85.8,192,192S511.6,597.3,405.3,597.3L405.3,597.3z"/>
 </svg>
