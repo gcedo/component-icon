@@ -1,17 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>Search</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Search" sketch:type="MSArtboardGroup">
-            <g id="ic_search_black_48px" sketch:type="MSLayerGroup">
-                <g id="Group" sketch:type="MSShapeGroup">
-                    <path d="M661.333333,597.333333 L627.626667,597.333333 L615.68,585.813333 C657.493333,537.173333 682.666667,474.026667 682.666667,405.333333 C682.666667,252.16 558.506667,128 405.333333,128 C252.16,128 128,252.16 128,405.333333 C128,558.506667 252.16,682.666667 405.333333,682.666667 C474.026667,682.666667 537.173333,657.493333 585.813333,615.68 L597.333333,627.626667 L597.333333,661.333333 L810.666667,874.24 L874.24,810.666667 L661.333333,597.333333 L661.333333,597.333333 Z M405.333333,597.333333 C299.093333,597.333333 213.333333,511.573333 213.333333,405.333333 C213.333333,299.093333 299.093333,213.333333 405.333333,213.333333 C511.573333,213.333333 597.333333,299.093333 597.333333,405.333333 C597.333333,511.573333 511.573333,597.333333 405.333333,597.333333 L405.333333,597.333333 Z" id="Shape" fill="#000000"></path>
-                    <path d="M0,0 L1024,0 L1024,1024 L0,1024 L0,0 Z" id="Shape"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024"
+	 enable-background="new 0 0 1024 1024" xml:space="preserve">
+<title>Search</title>
+<desc>Created with Sketch.</desc>
+<path id="Shape" d="M661.3,597.3h-33.7l-11.9-11.5c41.8-48.6,67-111.8,67-180.5c0-153.2-124.2-277.3-277.3-277.3
+	S128,252.2,128,405.3s124.2,277.3,277.3,277.3c68.7,0,131.8-25.2,180.5-67l11.5,11.9v33.7l213.3,212.9l63.6-63.6L661.3,597.3
+	L661.3,597.3z M405.3,597.3c-106.2,0-192-85.8-192-192s85.8-192,192-192s192,85.8,192,192S511.6,597.3,405.3,597.3L405.3,597.3z"/>
 </svg>

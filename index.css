@@ -1,8 +1,3 @@
-.Icon.rounded {
-  border-radius: 50%;
-  padding: 20px;
-}
-
 .icon {
   display: inline-block;
   text-indent: -30000px;
@@ -11,4 +6,3 @@
   background-repeat: no-repeat;
   line-height: 1;
 }
-
