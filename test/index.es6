@@ -35,18 +35,18 @@ describe('Icon', () => {
     });
 
     it('renders "Icon-*" className based on this.props.icon', () => {
-      renderer.render(<Icon icon="foobar"/>, {});
+      renderer.render(<Icon icon="facebook"/>, {});
       renderer.getRenderOutput().should.deep.equal(
         <svg
-          className="Icon Icon-foobar"
+          className="Icon Icon-facebook"
           width="60px"
           height="60px"
           aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">foobar icon</title><use ' +
+            __html: '<title id="title">facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              `xlink:href="/assets/icons.svg#foobar"` +
+              `xlink:href="/assets/icons.svg#facebook"` +
             '></use>',
           }}
         />
@@ -54,10 +54,10 @@ describe('Icon', () => {
     });
 
     it('adds this.props.className to svg className when supplied', () => {
-      renderer.render(<Icon icon="facebook" className="foobar"/>, {});
+      renderer.render(<Icon icon="facebook" className="facebook"/>, {});
       renderer.getRenderOutput().should.deep.equal(
         <svg
-          className="Icon Icon-facebook foobar"
+          className="Icon Icon-facebook facebook"
           width="60px"
           height="60px"
           aria-labelledby="title"
@@ -152,18 +152,18 @@ describe('Icon', () => {
     });
 
     it('changes xlink:href based on this.props.uri', () => {
-      renderer.render(<Icon icon="blib" uri="/foo/bar.svg"/>, {});
+      renderer.render(<Icon icon="facebook" uri="/foo/bar.svg"/>, {});
       renderer.getRenderOutput().should.deep.equal(
         <svg
-          className="Icon Icon-blib"
+          className="Icon Icon-facebook"
           width="60px"
           height="60px"
           aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">blib icon</title><use ' +
+            __html: '<title id="title">facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              `xlink:href="/foo/bar.svg#blib"` +
+              `xlink:href="/foo/bar.svg#facebook"` +
             '></use>',
           }}
         />

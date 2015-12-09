@@ -30,9 +30,10 @@ export default (
       {Icon.options.icon.map((iconType) => {
         const key = `rounded--${iconType}`;
         return (
-            <Icon icon={iconType} uri={svgUri} className="rounded"
+            <Icon icon={iconType} uri={svgUri}
               color="white"
               background="black" key={key}
+              rounded
             />);
       })
       }
