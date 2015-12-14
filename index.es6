@@ -117,9 +117,9 @@ export default class Icon extends React.Component {
         roundedProps.style.background = this.props.background;
       }
       html = (
-        <div className={`Icon--rounded ${props.className}`} {...roundedProps}>
+        <span className={`Icon--rounded ${props.className}`} {...roundedProps}>
           <svg {...props}/>
-        </div>);
+        </span>);
     } else {
       if (this.props.background) {
         props.style = { background: this.props.background };
