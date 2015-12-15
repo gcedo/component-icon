@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-icon",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "Provides SVG icons images, and classes with SVG background-images.",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
