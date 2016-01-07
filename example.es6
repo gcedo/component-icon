@@ -60,5 +60,17 @@ export default (
         }
       })}
     </div>
+    <p>Icons in a background-image (honolulu color)</p>
+    <div style={{ background: '#333' }}>
+      {Icon.options.icon.map((iconType) => {
+        const className = `icon icon--${iconType}-honolulu`;
+        if (iconType !== 'economist' && iconType !== 'economist-small') {
+          return (
+               <span className={className} key={className}>
+                 Text for a11y and SEO purposes.
+               </span>);
+        }
+      })}
+    </div>
   </div>
 );
