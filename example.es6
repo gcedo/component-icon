@@ -60,10 +60,10 @@ export default (
         }
       })}
     </div>
-    <p>Icons in a background-image (honolulu color)</p>
+    <p>Icons in a background-image (chicago color)</p>
     <div style={{ background: '#333' }}>
       {Icon.options.icon.map((iconType) => {
-        const className = `icon icon--${iconType}-honolulu`;
+        const className = `icon icon--${iconType}-chicago`;
         if (iconType !== 'economist' && iconType !== 'economist-small') {
           return (
                <span className={className} key={className}>
