@@ -162,7 +162,7 @@
     "npm-watch": "0.0.1",
     "parallelshell": "^2.0.0",
     "postcss": "^4.0.0",
-    "postcss-svg": "fabiosantoscode/postcss-svg#feature/fix-dot-template",
+    "postcss-svg": "fabiosantoscode/postcss-svg#fix-dot-template-postcss-old",
     "pre-commit": "^1.0.10",
     "react": "^0.14.0",
     "react-addons-test-utils": "^0.14.0",
