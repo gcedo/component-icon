@@ -4,9 +4,5 @@
     <title>hamburger</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="hamburger" sketch:type="MSArtboardGroup">
-            <path d="M8,13 L32,13 L32,15.5846154 L8,15.5846154 L8,13 Z M8,19.1384615 L32,19.1384615 L32,21.7230769 L8,21.7230769 L8,19.1384615 Z M8,25.4153846 L32,25.4153846 L32,28 L8,28 L8,25.4153846 Z" id="haburger" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+    <path d="M8,13 L32,13 L32,15.5846154 L8,15.5846154 L8,13 Z M8,19.1384615 L32,19.1384615 L32,21.7230769 L8,21.7230769 L8,19.1384615 Z M8,25.4153846 L32,25.4153846 L32,28 L8,28 L8,25.4153846 Z" id="haburger" ></path>
 </svg>

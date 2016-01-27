@@ -4,9 +4,5 @@
     <title>mail</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="mail" sketch:type="MSArtboardGroup">
-            <path d="M19.50019,23.1450937 L19.50019,23.1452969 L19.5,23.1450937 L10,15.922375 L10,27 L29,27 L29,15.9225781 L19.50019,23.1450937 Z M28.90443,14 L10.09576,14 L19.5,21.1290781 L28.90443,14 Z" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+    <path d="M19.50019,23.1450937 L19.50019,23.1452969 L19.5,23.1450937 L10,15.922375 L10,27 L29,27 L29,15.9225781 L19.50019,23.1450937 Z M28.90443,14 L10.09576,14 L19.5,21.1290781 L28.90443,14 Z" ></path>
 </svg>
