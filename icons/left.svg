@@ -4,9 +4,5 @@
     <title>left</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="left" sketch:type="MSArtboardGroup">
-            <path d="M14,20.5 L14,20.5 L23.1386768,11 L25,12.9339286 L17.7179813,20.5096939 L24.995335,28.0757653 L23.1433418,30 L14,20.5 L14,20.5 Z" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
-</svg>
+    <path d="M14,20.5 L14,20.5 L23.1386768,11 L25,12.9339286 L17.7179813,20.5096939 L24.995335,28.0757653 L23.1433418,30 L14,20.5 L14,20.5 Z" ></path>
+  </svg>

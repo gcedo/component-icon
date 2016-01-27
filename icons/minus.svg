@@ -4,9 +4,5 @@
     <title>minus</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="minus" sketch:type="MSArtboardGroup">
-            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="12" y="19" width="17" height="3"></rect>
-        </g>
-    </g>
+    <rect id="Rectangle-path"  x="12" y="19" width="17" height="3"></rect>
 </svg>

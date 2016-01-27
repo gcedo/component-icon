@@ -4,9 +4,5 @@
     <title>up</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="up" sketch:type="MSArtboardGroup">
-            <path d="M19.5,15 L19.5,15 L29,24.1386768 L27.0660714,26 L19.4903061,18.7133164 L11.9242347,25.9906701 L10,24.1386768 L19.5,15 L19.5,15 Z" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+    <path d="M19.5,15 L19.5,15 L29,24.1386768 L27.0660714,26 L19.4903061,18.7133164 L11.9242347,25.9906701 L10,24.1386768 L19.5,15 L19.5,15 Z"  ></path>
 </svg>
