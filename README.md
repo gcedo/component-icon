@@ -33,3 +33,6 @@ Gzip will deduplicate the color variation and the original, turning each variati
 
 This of course won't work if you encode the SVG in base64, so don't do it.
 
+## Note for designers 
+
+Please check wiki: https://github.com/economist-components/component-icon/wiki/Icon-use-when-exported-from-Sketch

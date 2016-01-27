@@ -55,6 +55,12 @@ files.forEach(function(iname) {
     .process(generateSourceCSS(iname))
     .css
 
+  css = css.replace(/(\d+\.\d{2})\d+/g, '$1');
+
+  css = css.replace(/%3c\!--.*?--%3e/gi, '');
+
+  css = css.replace(/%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22/g, '')
+
   console.log('Writing', outName)
   fs.writeFileSync(outName, css)
 });
