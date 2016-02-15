@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>hamburger</title>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="hamburger" sketch:type="MSArtboardGroup">
-            <path d="M8,13 L32,13 L32,15.5846154 L8,15.5846154 L8,13 Z M8,19.1384615 L32,19.1384615 L32,21.7230769 L8,21.7230769 L8,19.1384615 Z M8,25.4153846 L32,25.4153846 L32,28 L8,28 L8,25.4153846 Z" id="haburger" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+            <path d="M128,256 L128,341.333333 L896,341.333333 L896,256 L128,256 L128,256 Z" id="Path"></path>
+            <path d="M896,554.666667 L896,469.333333 L128,469.333333 L128,554.666667 L896,554.666667 Z" id="Path"></path>
+            <path d="M128,768 L896,768 L896,682.666667 L128,682.666667 L128,768 L128,768 Z" id="Path"></path>
 </svg>

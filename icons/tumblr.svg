@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
     <title>tumblr</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="__icons" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="tumblr" sketch:type="MSArtboardGroup">
-            <path d="M19.879,11 L19.879,15.298 L23.914,15.298 L23.914,17.968 L19.879,17.968 L19.879,22.329 C19.879,23.316 19.931,23.949 20.035,24.227 C20.139,24.509 20.333,24.732 20.619,24.899 C20.994,25.125 21.424,25.237 21.909,25.237 C22.77,25.237 23.626,24.956 24.478,24.397 L24.478,27.081 C23.751,27.421 23.094,27.662 22.505,27.8 C21.915,27.939 21.278,28.007 20.594,28.007 C19.815,28.007 19.128,27.909 18.531,27.713 C17.934,27.515 17.424,27.237 17.003,26.873 C16.581,26.51 16.287,26.122 16.125,25.713 C15.962,25.304 15.881,24.711 15.881,23.933 L15.881,17.968 L14,17.968 L14,15.561 C14.67,15.344 15.241,15.032 15.718,14.628 C16.193,14.223 16.577,13.736 16.864,13.167 C17.152,12.6 17.351,11.877 17.46,11 L19.879,11" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+            <path d="M709,460.595745 L560.875001,460.595745 L560.875001,653.382979 C560.875001,689.468795 567.787499,707.758866 615.187502,707.758866 L709,707.758866 L709,856.056737 C709,856.056737 658.14375,861 605.3125,861 C474.468751,861 412.75,781.907803 412.75,692.929079 L412.75,460.595745 L314,460.595745 L314,322.184397 C432.99375,312.297872 443.3625,221.341844 452.250001,164 L560.875001,164 L560.875001,312.297872 L709,312.297872 L709,460.595745 L709,460.595745 Z" id="Path"></path>
 </svg>
