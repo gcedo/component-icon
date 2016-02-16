@@ -4,20 +4,29 @@
 .icon {
   font-size: 3.5em;
 }
+/* Main brand logo */
 @import "backgrounds/economist-small.css";
 @import "backgrounds/economist.css";
+
+/* Action */
 @import "backgrounds/close.css";
 @import "backgrounds/down.css";
 @import "backgrounds/up.css";
 @import "backgrounds/right.css";
 @import "backgrounds/left.css";
+
+/* Content */ 
 @import "backgrounds/plus.css";
 @import "backgrounds/minus.css";
+
+/* Navigation */
 @import "backgrounds/hamburger.css";
 @import "backgrounds/home.css";
 @import "backgrounds/magnifier.css";
 @import "backgrounds/user.css";
 @import "backgrounds/share.css";
+
+/* Social media */
 @import "backgrounds/facebook.css";
 @import "backgrounds/googleplus.css";
 @import "backgrounds/linkedin.css";
@@ -28,7 +37,11 @@
 @import "backgrounds/instagram.css";
 @import "backgrounds/youtube.css";
 @import "backgrounds/tumblr.css";
+
+/* Sub brand logo */
 @import "backgrounds/worldif.css";
+
+/* Economist products */
 @import "backgrounds/video.css";
 @import "backgrounds/headset.css";
 @import "backgrounds/film.css";
