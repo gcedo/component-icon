@@ -15,7 +15,7 @@
 @import "backgrounds/right.css";
 @import "backgrounds/left.css";
 
-/* Content */ 
+/* Content */
 @import "backgrounds/plus.css";
 @import "backgrounds/minus.css";
 
@@ -37,6 +37,7 @@
 @import "backgrounds/instagram.css";
 @import "backgrounds/youtube.css";
 @import "backgrounds/tumblr.css";
+@import "backgrounds/bookmark.css";
 
 /* Sub brand logo */
 @import "backgrounds/worldif.css";

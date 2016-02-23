@@ -61,6 +61,7 @@ export default class Icon extends React.Component {
         'tumblr',
         'whatsapp',
         'youtube',
+        'bookmark',
         'worldif',
         'film',
         'headset',
