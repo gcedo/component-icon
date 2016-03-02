@@ -23,17 +23,6 @@ export default class Icon extends React.Component {
     };
   }
 
-  shouldComponentUpdate(nextProps) {
-    return (
-      this.props.icon !== nextProps.icon ||
-      this.props.background !== nextProps.background ||
-      this.props.color !== nextProps.color ||
-      this.props.size !== nextProps.size ||
-      this.props.className !== nextProps.className ||
-      this.props.uri !== nextProps.uri
-    );
-  }
-
   static get options() {
     return {
       icon: [
@@ -73,6 +62,17 @@ export default class Icon extends React.Component {
     };
   }
 
+  shouldComponentUpdate(nextProps) {
+    return (
+      this.props.icon !== nextProps.icon ||
+      this.props.background !== nextProps.background ||
+      this.props.color !== nextProps.color ||
+      this.props.size !== nextProps.size ||
+      this.props.className !== nextProps.className ||
+      this.props.uri !== nextProps.uri
+    );
+  }
+
   render() {
     /* eslint "react/no-danger": 0 */
     let width = '';
@@ -88,14 +88,14 @@ export default class Icon extends React.Component {
     const props = {
       role: 'img',
       'aria-labelledby': 'title',
-      className: `Icon Icon-${this.props.icon}`,
+      className: `Icon Icon-${ this.props.icon }`,
       dangerouslySetInnerHTML: {
         // use string literals here to avoid extraneous newlinw chars
         '__html':
-          `<title id="title">${this.props.icon} icon</title>` +
+          `<title id="title">${ this.props.icon } icon</title>` +
           '<use ' +
           'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-          `xlink:href="${this.props.uri}#${this.props.icon}"` +
+          `xlink:href="${ this.props.uri }#${ this.props.icon }"` +
         '></use>',
       },
     };
@@ -107,7 +107,7 @@ export default class Icon extends React.Component {
       props.height = this.props.size;
     }
     if (this.props.className) {
-      props.className += ` ${this.props.className}`;
+      props.className += ` ${ this.props.className }`;
     }
     let html = '';
     if (this.props.rounded) {
@@ -121,14 +121,14 @@ export default class Icon extends React.Component {
         roundedProps.style.background = this.props.background;
       }
       html = (
-        <span className={`Icon--rounded ${props.className}`} {...roundedProps}>
-          <svg {...props}/>
+        <span className={`Icon--rounded ${ props.className }`} {...roundedProps}>
+          <svg { ...props } />
         </span>);
     } else {
       if (this.props.background) {
         props.style = { background: this.props.background };
       }
-      html = (<svg {...props}/>);
+      html = (<svg { ...props } />);
     }
     return html;
   }

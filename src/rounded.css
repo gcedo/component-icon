@@ -1,11 +1,15 @@
 .Icon--rounded {
-  border-radius: 50%;
   display: inline-block;
+  border-radius: 50%;
 }
 
+/* stylelint-disable selector-no-type */
+
 .Icon--rounded svg {
-  transform-origin: center center;
+  /* stylelint-enable selector-no-type */
   transform: scale(0.7);
-  -moz-transform: scale(0.7);
+  transform-origin: center center;
+  /* stylelint-disable property-no-vendor-prefix, rule-properties-order */
   -moz-transform-origin: 0 0;
+  /* stylelint-enable property-no-vendor-prefix, rule-properties-order */
 }
