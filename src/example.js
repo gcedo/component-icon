@@ -1,5 +1,5 @@
-import React from 'react';
 import Icon from './';
+import React from 'react';
 
 import { dirname } from 'path';
 /* global window */
@@ -15,20 +15,20 @@ if (base === '/') {
   pathPrefix = '';
 }
 
-const svgUri = `${pathPrefix}/assets/icons.svg`;
+const svgUri = `${ pathPrefix }/assets/icons.svg`;
 export default (
   <div className="example">
    <p>Default version</p>
     <div>
       {Icon.options.icon.map((iconType) => {
-        const key = `default--${iconType}`;
+        const key = `default--${ iconType }`;
         return <Icon icon={iconType} uri={svgUri} key={key} />;
       })}
     </div>
     <p>Rounded</p>
     <div>
       {Icon.options.icon.map((iconType) => {
-        const key = `rounded--${iconType}`;
+        const key = `rounded--${ iconType }`;
         return (
             <Icon icon={iconType} uri={svgUri}
               color="white"
@@ -41,7 +41,7 @@ export default (
     <p>Icons in a background-image</p>
     <div>
       {Icon.options.icon.map((iconType) => {
-        const className = `icon icon--${iconType}`;
+        const className = `icon icon--${ iconType }`;
         return (
             <span className={className} key={className}>
               Text for a11y and SEO purposes.
@@ -51,25 +51,27 @@ export default (
     <p>Icons in a background-image (london color)</p>
     <div style={{ background: '#333' }}>
       {Icon.options.icon.map((iconType) => {
-        const className = `icon icon--${iconType}-london`;
+        const className = `icon icon--${ iconType }-london`;
         if (iconType !== 'economist' && iconType !== 'economist-small') {
           return (
                <span className={className} key={className}>
                  Text for a11y and SEO purposes.
                </span>);
         }
+        return null;
       })}
     </div>
     <p>Icons in a background-image (chicago color)</p>
     <div style={{ background: '#333' }}>
       {Icon.options.icon.map((iconType) => {
-        const className = `icon icon--${iconType}-chicago`;
+        const className = `icon icon--${ iconType }-chicago`;
         if (iconType !== 'economist' && iconType !== 'economist-small') {
           return (
                <span className={className} key={className}>
                  Text for a11y and SEO purposes.
                </span>);
         }
+        return null;
       })}
     </div>
   </div>
