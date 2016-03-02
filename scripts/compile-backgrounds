@@ -20,7 +20,7 @@ function makePostCSS() {
   return postcss(processors);
 }
 
-var files = fs.readdirSync(__dirname + '/icons')
+var files = fs.readdirSync(__dirname + '/../icons')
   .map(function removeSvgExt(fname) {
     return fname
         .replace(/\.svg$/, '')
