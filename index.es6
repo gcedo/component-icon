@@ -68,6 +68,7 @@ export default class Icon extends React.Component {
         'headset',
         'video',
         'apps',
+        'radio',
       ],
     };
   }
