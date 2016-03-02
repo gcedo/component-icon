@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import Icon from '..';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
