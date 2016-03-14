@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-icon",
-  "version": "5.9.1",
+  "version": "0.0.0-development",
   "description": "Provides SVG icons images, and classes with SVG background-images.",
   "homepage": "https://github.com/economist-components/component-icon",
   "bugs": {
@@ -9,13 +9,8 @@
   "license": "MIT",
   "author": "The Economist (http://economist.com)",
   "files": [
-    "*.js",
-    "*.es6",
     "backgrounds/*",
-    "*.css",
     "assets/*",
-    "!karma.conf.js",
-    "!testbundle.js",
     "lib/*"
   ],
   "main": "lib/index.js",
@@ -37,11 +32,8 @@
   },
   "scripts": {
     "access": "npm-run-all --parallel access:*",
-    "access:editorial": "npm access grant read-only economist:economist-editorial $npm_package_name",
-    "access:global-logic": "npm access grant read-only economist:global-logic $npm_package_name",
-    "access:infographics": "npm access grant read-only economist:infographics $npm_package_name",
+    "access:public": "npm access public $npm_package_name",
     "access:sudo": "npm access grant read-write economist:read-write-all $npm_package_name",
-    "access:yld": "npm access grant read-only economist:yld $npm_package_name",
     "build": "npm-run-all --parallel build:*",
     "prebuild:css": "mkdir -p $npm_package_directories_lib && npm run build:icons",
     "build:css": "cp $npm_package_directories_src/*.css $npm_package_directories_lib",
@@ -108,9 +100,6 @@
     "compact": false,
     "ignore": "node_modules",
     "loose": "all",
-    "optional": [
-      "runtime"
-    ],
     "sourceMaps": "inline",
     "stage": 2
   },
@@ -126,70 +115,53 @@
     ]
   },
   "dependencies": {
-    "babel-runtime": "^6.3.19",
     "react": "^0.14.7"
   },
   "devDependencies": {
     "@economist/doc-pack": "^1.0.6",
-    "@economist/provision-react-component": "1.4.3",
+    "@economist/provision-react-component": "1.6.3",
     "babel": "^5.8.34",
     "babel-polyfill": "^6.6.1",
     "babelify": "^6.4.0",
-    "browser-sync": "^2.8.2",
     "browserify": "^13.0.0",
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
-    "eslint": "^2.1.0",
+    "eslint": "^2.3.0",
     "eslint-config-strict": "^8.5.0",
-    "eslint-config-strict-react": "^7.0.1",
+    "eslint-config-strict-react": "^8.0.1",
     "eslint-plugin-filenames": "^0.2.0",
-    "eslint-plugin-react": "^4.2.1",
-    "ghooks": "^1.0.1",
+    "eslint-plugin-react": "^4.2.0",
+    "ghooks": "^1.0.3",
     "git-directory-deploy": "^1.5.0",
     "hbs-cli": "^1.0.0",
-    "karma": "^0.13.22",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^0.2.1",
+    "karma": "^0.13.21",
     "karma-mocha": "^0.2.2",
-    "karma-mocha-reporter": "^1.2.2",
+    "karma-mocha-reporter": "^2.0.0",
     "karma-phantomjs-launcher": "^1.0.0",
-    "karma-sauce-launcher": "^0.3.0",
+    "karma-sauce-launcher": "^0.3.1",
     "live-server": "^0.9.2",
     "mocha": "^2.4.5",
     "npm-assets": "^0.1.1",
-    "npm-run-all": "^1.5.3",
-    "npm-watch": "0.0.1",
-    "phantomjs-prebuilt": "^2.1.4",
-    "postcss": "^5.0.19",
+    "npm-run-all": "^1.5.1",
+    "phantomjs-prebuilt": "^2.1.5",
     "postcss-cli": "^2.5.1",
-    "postcss-cssnext": "^2.5.0",
+    "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",
     "postcss-reporter": "^1.3.3",
     "postcss-svg": "fabiosantoscode/postcss-svg#fix-dot-template-postcss-old",
     "postcss-url": "^5.1.1",
-    "pre-commit": "^1.0.10",
     "react-addons-test-utils": "^0.14.7",
     "react-dom": "^0.14.7",
     "semantic-release": "^4.3.5",
-    "stylelint": "^4.3.5",
-    "stylelint-config-strict": "^2.1.0",
+    "stylelint": "^4.5.1",
+    "stylelint-config-strict": "^3.0.1",
     "svg-sprite": "^1.2.5",
     "svg4everybody": "^2.0.0",
     "svgo": "^0.5.3",
-    "validate-commit-msg": "^2.4.0",
+    "validate-commit-msg": "^2.3.1",
     "watchify": "^3.7.0"
   },
   "peerDependencies": {
     "react": "^0.14.0"
-  },
-  "pre-commit": [
-    "lint"
-  ],
-  "watch": {
-    "doc:html": [
-      "README.md",
-      "./*.js",
-      "package.json"
-    ]
   }
 }
