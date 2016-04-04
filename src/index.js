@@ -58,6 +58,7 @@ export default class Icon extends React.Component {
         'video',
         'apps',
         'radio',
+        'balloon',
       ],
     };
   }
