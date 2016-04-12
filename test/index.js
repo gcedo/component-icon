@@ -1,5 +1,5 @@
 import 'babel-polyfill';
-import Icon from '..';
+import Icon from '../src';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 import chai from 'chai';
