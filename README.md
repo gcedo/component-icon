@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/economist-components/component-icon.svg?branch=master)](https://travis-ci.org/economist-components/component-icon)
 # Icon
 > Provides SVG icons images, and classes with SVG background-images.
 
