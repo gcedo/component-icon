@@ -1,4 +1,21 @@
-[![Build Status](https://travis-ci.org/economist-components/component-icon.svg?branch=master)](https://travis-ci.org/economist-components/component-icon)
+[![By:Economist](
+  https://img.shields.io/badge/By-Economist-e3120b.svg?style=flat-square
+)](
+  http://www.economist.com/
+)[![Build Status](
+  https://img.shields.io/npm/v/@economist%2Fcomponent-icon.svg?style=flat-square
+)](
+  https://www.npmjs.com/package/@economist%2Fcomponent-icon
+)[![Build Status](
+  https://img.shields.io/travis/economist-components/component-icon/master.svg?style=flat-square
+)](
+  https://travis-ci.org/economist-components/component-icon/branches
+)[![Coverage Status](
+  https://img.shields.io/coveralls/economist-components/component-icon/master.svg?style=flat-square
+)](
+  https://coveralls.io/github/economist-components/component-icon?branch=master
+)
+
 # Icon
 > Provides SVG icons images, and classes with SVG background-images.
 
