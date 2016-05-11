@@ -91,11 +91,6 @@
       "commit-msg": "validate-commit-msg"
     }
   },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
   "babel": {
     "compact": false,
     "ignore": "node_modules",
