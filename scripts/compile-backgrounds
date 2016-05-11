@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable */
 'use strict';
 
 var fs = require('fs');
@@ -27,7 +28,7 @@ var files = fs.readdirSync(__dirname + '/../icons')
         .replace(/^.*?icons\//, '');
   });
 
-var colorVariations = require('./color-variations.json')
+var colorVariations = require('./color-variations.json');
 
 function generateSourceCSS(iconName) {
   var className = '.icon--' + iconName
@@ -53,14 +54,14 @@ files.forEach(function(iname) {
   var outName = 'backgrounds/' + iname + '.css'
   var css = makePostCSS()
     .process(generateSourceCSS(iname))
-    .css
+    .css;
 
   css = css.replace(/(\d+\.\d{2})\d+/g, '$1');
 
   css = css.replace(/%3c\!--.*?--%3e/gi, '');
 
-  css = css.replace(/%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22/g, '')
+  css = css.replace(/%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22/g, '');
 
-  console.log('Writing', outName)
-  fs.writeFileSync(outName, css)
+  console.log('Writing', outName);
+  fs.writeFileSync(outName, css);
 });

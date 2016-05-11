@@ -4,11 +4,13 @@
 }
 
 /* stylelint-disable selector-no-type */
+/* not able to add class to svg */
 
 .Icon--rounded svg {
   /* stylelint-enable selector-no-type */
   transform: scale(0.7);
   /* stylelint-disable property-no-vendor-prefix */
+  /* different values to non-prefix */
   -moz-transform-origin: 0 0;
   /* stylelint-enable property-no-vendor-prefix */
   transform-origin: center center;
