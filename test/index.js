@@ -25,10 +25,9 @@ describe('Icon', () => {
           className="Icon Icon-facebook"
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -44,10 +43,9 @@ describe('Icon', () => {
           className="Icon Icon-facebook"
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -63,10 +61,9 @@ describe('Icon', () => {
           className="Icon Icon-facebook facebook"
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -82,10 +79,9 @@ describe('Icon', () => {
           className="Icon Icon-facebook"
           width="10em"
           height="10em"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -102,10 +98,9 @@ describe('Icon', () => {
           fill="black"
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -122,10 +117,9 @@ describe('Icon', () => {
           fill="black"
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -142,10 +136,9 @@ describe('Icon', () => {
           style={{ background: 'url()' }}
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/assets/icons.svg#facebook"' +
             '></use>',
@@ -161,10 +154,9 @@ describe('Icon', () => {
           className="Icon Icon-facebook"
           width="60px"
           height="60px"
-          aria-labelledby="title"
           role="img"
           dangerouslySetInnerHTML={{
-            __html: '<title id="title">facebook icon</title><use ' +
+            __html: '<title>facebook icon</title><use ' +
               'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
               'xlink:href="/foo/bar.svg#facebook"' +
             '></use>',
@@ -175,5 +167,26 @@ describe('Icon', () => {
 
   });
 
+  describe('Rendering:custom biz rules', () => {
+    const renderer = TestUtils.createRenderer();
+    it('renders economist icon with the title "the economist" and width shoud be multiplied by 2', () => {
+      renderer.render(<Icon icon="economist" />, {});
+      renderer.getRenderOutput().should.deep.equal(
+        <svg
+          className="Icon Icon-economist"
+          width="120px"
+          height="60px"
+          role="img"
+          dangerouslySetInnerHTML={{
+            __html: '<title>the economist</title><use ' +
+              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
+              'xlink:href="/assets/icons.svg#economist"' +
+            '></use>',
+          }}
+        />
+      );
+    });
+
+  });
 
 });

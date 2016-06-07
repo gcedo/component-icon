@@ -77,23 +77,28 @@ export default class Icon extends React.Component {
   render() {
     /* eslint "react/no-danger": 0 */
     let width = '';
+    let iconTitle = [
+      this.props.icon,
+      'icon',
+    ].join(' ');
     // Change ratio for The Economist original logo
     switch (this.props.icon) {
       case 'economist':
         width = `${ this.props.size.replace('px', '') * 2 }px`;
+        iconTitle = 'the economist';
         break;
       default:
         width = this.props.size;
         break;
     }
+
     const props = {
       role: 'img',
-      'aria-labelledby': 'title',
       className: `Icon Icon-${ this.props.icon }`,
       dangerouslySetInnerHTML: {
         // use string literals here to avoid extraneous newlinw chars
         '__html':
-          `<title id="title">${ this.props.icon } icon</title>` +
+          `<title>${ iconTitle }</title>` +
           '<use ' +
           'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
           `xlink:href="${ this.props.uri }#${ this.props.icon }"` +
