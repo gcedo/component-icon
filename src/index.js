@@ -1,5 +1,10 @@
 import React from 'react';
 
+let configObj = {};
+export function config(opts) {
+  configObj = opts;
+}
+
 export default class Icon extends React.Component {
 
   static get propTypes() {
@@ -15,12 +20,13 @@ export default class Icon extends React.Component {
   }
 
   static get defaultProps() {
-    return {
+    const defaultConfig = {
       className: '',
       uri: '/assets/icons.svg',
       size: '60px',
       rounded: false,
     };
+    return Object.assign(defaultConfig, configObj);
   }
 
   static get options() {
@@ -95,15 +101,6 @@ export default class Icon extends React.Component {
     const props = {
       role: 'img',
       className: `Icon Icon-${ this.props.icon }`,
-      dangerouslySetInnerHTML: {
-        // use string literals here to avoid extraneous newlinw chars
-        '__html':
-          `<title>${ iconTitle }</title>` +
-          '<use ' +
-          'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-          `xlink:href="${ this.props.uri }#${ this.props.icon }"` +
-        '></use>',
-      },
     };
     if (this.props.color) {
       props.fill = this.props.color;
@@ -115,7 +112,15 @@ export default class Icon extends React.Component {
     if (this.props.className) {
       props.className += ` ${ this.props.className }`;
     }
-    let html = '';
+    if (this.props.background) {
+      props.style = { background: this.props.background };
+    }
+    const svg = (
+      <svg {...props} >
+        <title>{iconTitle}</title>
+        <use xlinkHref={`${ this.props.uri }#${ this.props.icon }`} />
+      </svg>
+    );
     if (this.props.rounded) {
       const roundedProps = {
         style: {
@@ -126,16 +131,13 @@ export default class Icon extends React.Component {
       if (this.props.background) {
         roundedProps.style.background = this.props.background;
       }
-      html = (
+      return (
         <span className={`Icon--rounded ${ props.className }`} {...roundedProps}>
-          <svg { ...props } />
-        </span>);
-    } else {
-      if (this.props.background) {
-        props.style = { background: this.props.background };
-      }
-      html = (<svg { ...props } />);
+          {svg}
+        </span>
+      );
     }
-    return html;
+
+    return svg;
   }
 }
