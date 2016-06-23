@@ -1,10 +1,11 @@
 import 'babel-polyfill';
-import Icon from '../src';
+import Icon, { config as configIcon } from '../src';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 import chai from 'chai';
 chai.should();
 
+const renderer = TestUtils.createRenderer();
 /* eslint react/no-danger: 0, id-match: 0 */
 describe('Icon', () => {
   it('is compatible with React.Component', () => {
@@ -16,8 +17,34 @@ describe('Icon', () => {
     React.isValidElement(<Icon icon="facebook" />).should.equal(true);
   });
 
+  describe('config Icon', () => {
+    before(() => configIcon({
+      className: 'foo',
+      uri: '/foo/bar.lel',
+      size: '1337px',
+    }));
+
+    // Clean up
+    after(() => configIcon({}));
+
+    it('renders a svg.Icon with an <use> tag with diff defaultProps', () => {
+      renderer.render(<Icon icon="facebook" />, {});
+      renderer.getRenderOutput().should.deep.equal(
+        <svg
+          className="Icon Icon-facebook foo"
+          width="1337px"
+          height="1337px"
+          role="img"
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/foo/bar.lel#facebook" />
+        </svg>
+      );
+    });
+
+  });
+
   describe('Rendering', () => {
-    const renderer = TestUtils.createRenderer();
     it('renders a svg.Icon with an <use> tag', () => {
       renderer.render(<Icon icon="facebook" />, {});
       renderer.getRenderOutput().should.deep.equal(
@@ -26,13 +53,10 @@ describe('Icon', () => {
           width="60px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/assets/icons.svg#facebook" />
+        </svg>
       );
     });
 
@@ -44,13 +68,10 @@ describe('Icon', () => {
           width="60px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/assets/icons.svg#facebook" />
+        </svg>
       );
     });
 
@@ -62,13 +83,10 @@ describe('Icon', () => {
           width="60px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/assets/icons.svg#facebook" />
+        </svg>
       );
     });
 
@@ -80,13 +98,10 @@ describe('Icon', () => {
           width="10em"
           height="10em"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/assets/icons.svg#facebook" />
+        </svg>
       );
     });
 
@@ -99,32 +114,10 @@ describe('Icon', () => {
           width="60px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
-      );
-    });
-
-    it('renders fill attribute based on this.props.color', () => {
-      renderer.render(<Icon icon="facebook" color="black" />, {});
-      renderer.getRenderOutput().should.deep.equal(
-        <svg
-          className="Icon Icon-facebook"
-          fill="black"
-          width="60px"
-          height="60px"
-          role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/assets/icons.svg#facebook" />
+        </svg>
       );
     });
 
@@ -137,13 +130,10 @@ describe('Icon', () => {
           width="60px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/assets/icons.svg#facebook" />
+        </svg>
       );
     });
 
@@ -155,20 +145,16 @@ describe('Icon', () => {
           width="60px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>facebook icon</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/foo/bar.svg#facebook"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>facebook icon</title>
+          <use xlinkHref="/foo/bar.svg#facebook" />
+        </svg>
       );
     });
 
   });
 
   describe('Rendering:custom biz rules', () => {
-    const renderer = TestUtils.createRenderer();
     it('renders economist icon with the title "the economist" and width shoud be multiplied by 2', () => {
       renderer.render(<Icon icon="economist" />, {});
       renderer.getRenderOutput().should.deep.equal(
@@ -177,13 +163,10 @@ describe('Icon', () => {
           width="120px"
           height="60px"
           role="img"
-          dangerouslySetInnerHTML={{
-            __html: '<title>the economist</title><use ' +
-              'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-              'xlink:href="/assets/icons.svg#economist"' +
-            '></use>',
-          }}
-        />
+        >
+          <title>the economist</title>
+          <use xlinkHref="/assets/icons.svg#economist" />
+        </svg>
       );
     });
 
